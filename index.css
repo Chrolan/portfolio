@@ -6,12 +6,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-header {
-	position: fixed;
-	top: 0px;
-}
-
-
 .row {
   max-width: 100%;
   padding-left: 20px;
@@ -36,11 +30,6 @@ header {
 
 .col-4, .col-6, .col-5, .col-8, .col-12 {
   width: 100%;
-}
-
-img {
-	max-width: 100%;
-	min-width: 100%;
 }
 
 @media only screen and (min-width: 650px) {
@@ -93,7 +82,74 @@ img {
     }
 }
 
+header {
+	position: fixed;
+	top: 0px;
+    background-color: darkgrey;
+    color: black;
+    width: 100%;
+}
+
+img {
+	max-width: 75%;
+	min-width: 75%;
+}
+
+.image, h2 {
+    text-align: center;
+}
+
 .projects {
-	margin-top: 50px;
+	margin-top: 60px;
+}
+
+nav a {
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: white;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.button-link {
+  margin-top: 15px ;
+  background-color: #4CAF50; /* Green */
+  border: 1px solid black;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+.button-link  {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button-link :hover, .button-link :target, .button-link :focus {
+    background-color: #69ff6d; /* Green */
+    color: black;
+    font-weight: bold;
+}
+
+.selectedNavElement {
+    background-color: #ddd;
+    color: white;
+}
+
+.nav-bar a:hover,.nav-bar a:focus,.nav-bar a:target{
+    background-color: #ddd;
+    color: black;
+}
+.nav-bar .icon {
+  display: none;
 }
 

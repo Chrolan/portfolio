@@ -3,69 +3,86 @@
 <head>
 	<title>Jordi Kleriga | Portfolio</title>
 	<link href="index.css" type="text/css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="index.js" type="application/javascript" rel="script"></script>
 </head>
 <body>
-	<header class="row">
+	<header class="header" role="banner">
 		<nav class="nav-bar">
-			<ul>
-				<li>Bio</li>
-				<li>Portfolio Projects</li>
-				<li>Contact Information</li>
-			</ul>
+			<a href="">Bio</a>
+			<a href="">Project 1</a>
+			<a href="">Project 2</a>
+			<a href="">Project 3</a>
 		</nav>
 	</header>
 
-<div class="projects row">
-	<div class="project-container col-12">
-		<h2 class="project-name">
-			Workout App
-		</h2>
-		<p class="project-description">
-			Lightweight workout tracker that allows the creation of work outs and the ability to add exercises.
-			Editing of workouts is available, along with deleting work outs the user no longer needs.
-		</p>
-		<img src="assets/Create-Workout-Main%20Page.png" alt=""/>
-		<button href="https://github.com/Chrolan/react-capstone-workout">Github</button>
-		<button href="https://enigmatic-anchorage-97005.herokuapp.com/">Live Project</button>
-	</div>
+	<main class="row" role="main">
 
-	<div class="project-container col-12">
-		<h2 class="project-name">
-			Service Request System
-		</h2>
-		<p class="project-description">
-			Service request system is a CRM of sorts. It allows users to submit telecommunications requests for
-			service activation. This project was very specific to my current employement as this is an immediate
-			need for
-		</p>
-		<div class="image col-12">
-			<img src="assets/CSR-Main%20Page.png" alt=""/>
+		<div class="bio">
+			<h2>
+				Jordi Kleriga
+			</h2>
+
+			<p>
+				My name is Jordi Kleriga and i'm an aspiring full stack developer. Over the last 
+			</p>
 		</div>
-		<button href="https://github.com/Chrolan/node-capstone-csr">Github</button>
-		<button href="https://pure-oasis-55665.herokuapp.com/">Live Project</button>
-	</div>
 
-	<div class="project-container col-12">
-		<h2 class="project-name">
-			Food Locator!
-		</h2>
-		<p class="project-description">
-			This project encompasses the usage of APIs and how to manipulate the data returned from them.<br>
+		<div class="projects">
+			<div class="project-container col-12">
+				<h2 class="project-name">
+					Workout App
+				</h2>
+				<p class="project-description">
+					Lightweight workout tracker that allows the creation of work outs and the ability to add exercises.
+					Editing of workouts is available, along with deleting work outs the user no longer needs.
+				</p>
+				<div class="image col-12">
+					<img src="assets/Create-Workout-Main%20Page.png" alt=""/>
+				</div>
+				<button class="button-link col-6" href="https://github.com/Chrolan/react-capstone-workout">Github</button>
+				<button class="button-link col-6" href="https://enigmatic-anchorage-97005.herokuapp.com/">Live Project</button>
+			</div>
 
-		</p>
-		<div class="image col-12">
-			<img src="assets/Food%20Locator%20Main%20Page.png" alt=""/>
+			<div class="project-container col-12">
+				<h2 class="project-name">
+					Service Request System
+				</h2>
+				<p class="project-description">
+					Service request system is a CRM of sorts. It allows users to submit telecommunications requests for
+					service activation. This project was very specific to my current employement as this is an immediate
+					need for
+				</p>
+				<div class="image col-12">
+					<img src="assets/CSR-Main%20Page.png" alt=""/>
+				</div>
+				<button class="button-link col-6" href="https://github.com/Chrolan/node-capstone-csr">Github</button>
+				<button class="button-link col-6" href="https://pure-oasis-55665.herokuapp.com/">Live Project</button>
+			</div>
+
+			<div class="project-container col-12">
+				<h2 class="project-name">
+					Food Locator!
+				</h2>
+				<p class="project-description">
+					This project encompasses the usage of APIs and how to manipulate the data returned from them.<br>
+
+				</p>
+				<div class="image col-12">
+					<img src="assets/Food%20Locator%20Main%20Page.png" alt=""/>
+				</div>
+				<button class="button-link col-6" href="https://github.com/Chrolan/api-hack">Github</button>
+				<button class="button-link col-6" href="https://chrolan.github.io/api-hack/">Live Project</button>
+			</div>
 		</div>
-		<button href="https://github.com/Chrolan/api-hack">Github</button>
-		<button href="https://chrolan.github.io/api-hack/">Live Project</button>
-	</div>
-</div>
+	</main>
 
-
-<div class="contact-info">
-	<ul>
-		<li></li>
-	</ul>
-</div>
+	<footer class="footer" role="doc-footnote">
+		<div class="contact-info">
+			<ul>
+				<li></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
