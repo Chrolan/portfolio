@@ -99,7 +99,7 @@ img {
     text-align: center;
 }
 
-.projects {
+.projects, .bio {
 	margin-top: 60px;
 }
 
@@ -151,5 +151,9 @@ nav a {
 }
 .nav-bar .icon {
   display: none;
+}
+
+header {
+    margin-left: 0;
 }
 
