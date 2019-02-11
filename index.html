@@ -4,17 +4,15 @@
 	<title>Jordi Kleriga | Portfolio</title>
 	<meta name="viewport" content="width=device-width">
 	<link href="index.css" type="text/css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-	<script src="index.js" type="application/javascript" rel="script"></script>
 </head>
 <body>
 	<header class="header" role="banner">
 		<nav role="navigation" id="nav-bar" class="nav-bar row">
 			<div class="nav-bar-items">
-				<a href="#bio" id="bio-button" class="nav-button">Bio</a>
-				<a href="#project-1" id="project-1-button" class="nav-button">Project 1</a>
-				<a href="#project-2" id="project-2-button" class="nav-button">Project 2</a>
-				<a href="#project-3" id="project-3-button" class="nav-button">Project 3</a>
+				<a href="#" id="bio-button" class="nav-button">Bio</a>
+				<a href="#" id="project-1-button" class="nav-button">Project 1</a>
+				<a href="#" id="project-2-button" class="nav-button">Project 2</a>
+				<a href="#" id="project-3-button" class="nav-button">Project 3</a>
 				<a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
 					<img src="assets/menu%20icon.png" alt="menu icon">
 				</a>
@@ -25,18 +23,23 @@
 	<main class="row" role="main">
 
 		<div class="bio col-12" id="bio">
+			<div class="bio-photo col-6">
+				<img src="assets/Jordi.jpg"/>
+			</div>
+			<div class="contact-container col-6">
 			<p>
-				My name is Jordi Kleriga and I'm an aspiring full stack developer. I love building new and interesting items. My focus is to bring easy to use
+				Hello there! My name is Jordi Kleriga and I'm an aspiring full stack developer. I love building new and interesting items. My focus is to bring easy to use
 				form focused programs to automate simple tasks. If you'd like to contact me, you can do so below
 				<div class="contact">
 					<a href="mailto:jordikleriga@gmail.com"><img src="assets/email.jpg"/></a>
 					<a href="https://www.linkedin.com/in/jordi-kleriga-9734679b/"><img src="assets/linkedin.png"/></a>
 					<a href="https://github.com/Chrolan/"><img src="assets/github.png"/></a>
 				</div>
+			</div>
 			</p>
 		</div>
 
-		<div class="project-container col-12" id="project-1">
+		<div class="project-container col-12" id="project-1" hidden>
 			<h2 class="project-name">
 				Workout App
 			</h2>
@@ -53,15 +56,17 @@
 			<div class="button col-6">
 				<button class="button-link" onclick="location.href='https://enigmatic-anchorage-97005.herokuapp.com/'">Live Project</button>
 			</div>
-			<div class="resources">
-				<a href=""><img src=""></a>
-				<a href=""><img src=""></a>
-				<a href=""><img src=""></a>
-				<a href=""><img src=""></a>
+			<div class="resources col-12">
+				<a href="https://reactjs.org/"><img src="assets/react.png" alt="react js"></a>
+				<a href="https://react-redux.js.org/"><img src="assets/redux.png" alt="redux js"></a>
+				<a href="https://nodejs.org/en/about/"><img src="assets/node.png" alt="node javascript"></a>
+				<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a>
+				<a href="https://www.mongodb.com/"><img src="assets/mongodb.png" alt="mongo database"></a>
 			</div>
 		</div>
 
-		<div class="project-container col-12" id="project-2">
+		<div class="project-container col-12" id="project-2" hidden>
 			<h2 class="project-name">
 				Service Request System
 			</h2>
@@ -79,9 +84,15 @@
 			<div class="button col-6">
 				<button class="button-link" onclick="location.href='https://pure-oasis-55665.herokuapp.com/'">Live Project</button>
 			</div>
+			<div class="resources col-12">
+				<a href="https://nodejs.org/en/about/"><img src="assets/node.png" alt="node javascript"></a>
+				<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a>
+				<a href="https://www.mongodb.com/"><img src="assets/mongodb.png" alt="mongo database"></a>
+			</div>
 		</div>
 
-		<div class="project-container col-12" id="project-3">
+		<div class="project-container col-12" id="project-3" hidden>
 			<h2 class="project-name">
 				Food Locator!
 			</h2>
@@ -98,8 +109,14 @@
 			<div class="button col-6">
 				<button class="button-link" onclick="location.href='https://chrolan.github.io/api-hack/'">Live Project</button>
 			</div>
+			<div class="resources col-12">
+				<a href="https://jquery.com/"><img src="assets/jquery.png" alt="jquery"></a>
+				<a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a>
+			</div>
 		</div>
 	</main>
-
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script src="index.js" type="application/javascript" rel="script"></script>
 </body>
 </html>

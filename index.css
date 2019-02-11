@@ -8,7 +8,7 @@ body {
 }
 
 .row {
-  max-width: 100%;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -91,7 +91,6 @@ body {
 header {
 	position: fixed;
 	top: 0px;
-    background-color: darkgrey;
     color: black;
     width: 100%;
 }
@@ -101,12 +100,16 @@ img {
 	min-width: 75%;
 }
 
-.image, h2, .contact {
+.image, h2, .contact, .resources {
     text-align: center;
 }
 
-.projects, .bio {
-	margin-top: 60px;
+.contact, .resources {
+    margin-top: 25px;
+}
+
+#project-1,#project-2,#project-3, #bio {
+	margin-top: 45px;
 }
 
 nav a {
@@ -128,7 +131,7 @@ nav a {
 
 .button-link {
   margin-top: 15px ;
-  background-color: deepskyblue;
+  background-color: darkgray;
   border: 1px solid black;
   color: white;
   padding: 14px 40px;
@@ -186,7 +189,7 @@ header {
     margin-left: 0;
 }
 
-.contact a {
+.contact a, .resources a {
     display: inline-block;
     height: 60px;
     width: 60px;
