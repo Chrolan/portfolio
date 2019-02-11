@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+    margin:0;
 }
 
 .row {
@@ -64,6 +65,8 @@ body {
     position: absolute;
     right: 0;
     top: 0;
+    height: 50px;
+    width: 50px;
     }
 
     .nav-bar.responsive div a {
@@ -72,13 +75,16 @@ body {
         text-align: left;
     }
 
-    .nav-bar a:not(:first-child) {
+    .nav-bar a {
         display: none;
     }
 
     .nav-bar a.icon {
     float: right;
     display: block;
+    height: 50px;
+    width: 50px;
+    padding: 8px 0 0 0;
     }
 }
 
@@ -95,7 +101,7 @@ img {
 	min-width: 75%;
 }
 
-.image, h2 {
+.image, h2, .contact {
     text-align: center;
 }
 
@@ -116,9 +122,13 @@ nav a {
     text-decoration: none;
 }
 
+.button {
+    text-align: center;
+}
+
 .button-link {
   margin-top: 15px ;
-  background-color: #4CAF50; /* Green */
+  background-color: deepskyblue;
   border: 1px solid black;
   color: white;
   padding: 14px 40px;
@@ -134,26 +144,50 @@ nav a {
     transition-duration: 0.4s;
 }
 
-.button-link :hover, .button-link :target, .button-link :focus {
+.button-link:hover, .button-link:target, .button-link:focus {
     background-color: #69ff6d; /* Green */
     color: black;
     font-weight: bold;
 }
 
-.selectedNavElement {
-    background-color: #ddd;
-    color: white;
+
+.nav-bar .icon {
+  display: none;
+}
+/* Add a black background color to the top navigation */
+.nav-bar {
+    background-color: #333;
+    overflow: hidden;
 }
 
+/* Style the links inside the navigation bar */
+.nav-bar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+}
+
+/* Change the color of links on hover */
 .nav-bar a:hover,.nav-bar a:focus,.nav-bar a:target{
     background-color: #ddd;
     color: black;
 }
-.nav-bar .icon {
-  display: none;
+
+.selectedNavElement {
+    background-color: #ddd;
+    color: black;
 }
 
 header {
     margin-left: 0;
 }
 
+.contact a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+}

@@ -2,14 +2,14 @@
 
 function navBarFunction() {
     var x = document.getElementById("nav-bar");
-    if (x.className === "nav-bar") {
+    if (x.className === "nav-bar row") {
         x.className += " responsive";
     } else {
-        x.className = "nav-bar";
+        x.className = "nav-bar row";
     }
 }
 
-$('.nav-bar > a').on('click', function(event){
+$('.nav-bar-items > a').on('click', function(event){
     // First we take away the background color (selection) from the <li>
     $('.selectedNavElement').removeClass('selectedNavElement');
 
