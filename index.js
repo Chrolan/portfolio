@@ -2,10 +2,10 @@
 
 function navBarFunction() {
     var x = document.getElementById("nav-bar");
-    if (x.className === "nav-bar row") {
+    if (x.className === "nav-bar col-12") {
         x.className += " responsive";
     } else {
-        x.className = "nav-bar row";
+        x.className = "nav-bar col-12";
     }
 }
 

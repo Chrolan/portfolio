@@ -5,10 +5,11 @@
 body {
   font-family: 'Roboto', sans-serif;
     margin:0;
+    background-color: #87ceeb;
 }
 
 .row {
-  max-width: 1200px;
+  max-width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -90,17 +91,23 @@ body {
 
 header {
 	position: fixed;
+    background-color: #333;
 	top: 0px;
     color: black;
     width: 100%;
 }
 
-img {
+.image img {
 	max-width: 75%;
 	min-width: 75%;
 }
 
-.image, h2, .contact, .resources {
+a img {
+    max-width: 85%;
+    height: 85%;
+}
+
+.image, h2, .contact, .resources, .bio-photo {
     text-align: center;
 }
 
@@ -108,8 +115,12 @@ img {
     margin-top: 25px;
 }
 
-#project-1,#project-2,#project-3, #bio {
+#project-1,#project-2,#project-3{
 	margin-top: 45px;
+}
+
+#bio {
+    margin-top: 90px;
 }
 
 nav a {
@@ -159,7 +170,6 @@ nav a {
 }
 /* Add a black background color to the top navigation */
 .nav-bar {
-    background-color: #333;
     overflow: hidden;
 }
 
@@ -194,3 +204,9 @@ header {
     height: 60px;
     width: 60px;
 }
+
+.portrait {
+    width: 50%;
+    height: 50%;
+}
+
