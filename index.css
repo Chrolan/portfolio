@@ -30,6 +30,15 @@ body {
   padding-right: 1.04166666%;
 }
 
+.fifty {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+.fifty {
+    width: 50%;
+}
+
 .col-4, .col-6, .col-5, .col-8, .col-12 {
   width: 100%;
 }
@@ -55,6 +64,9 @@ body {
   .col-12 {
     width: 100%;
   }
+  .name {
+      text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px){
@@ -78,6 +90,9 @@ body {
 
     .nav-bar a {
         display: none;
+    }
+    .name a {
+        display: block;
     }
 
     .nav-bar a.icon {
@@ -120,7 +135,7 @@ a img {
 }
 
 #bio {
-    margin-top: 90px;
+    margin-top: 70px;
 }
 
 nav a {
@@ -208,5 +223,9 @@ header {
 .portrait {
     width: 50%;
     height: 50%;
+}
+
+.fifty {
+    width: 50%;
 }
 
