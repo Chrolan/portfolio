@@ -19,6 +19,12 @@ header,section,nav,footer,div {
     text-align: center;
 }
 
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
 .row {
     width: 100%;
     display: flex;
@@ -30,10 +36,14 @@ header,section,nav,footer,div {
 .flex-left {
     display: flex;
     justify-content: flex-start ;
+    padding-left:10px;
+    padding-top:10px;
 }
 .flex-right {
     display: flex;
     justify-content: flex-end;
+    padding-right:10px;
+    padding-top:10px;
 }
 
 .item {
@@ -84,6 +94,10 @@ ul > li > a:hover, ul > li > a:active {
 a > img {
     height: 60px;
     width: 60px;
+}
+
+img {
+    width: 400px;
 }
 
 /*BUTTON CSS*/
