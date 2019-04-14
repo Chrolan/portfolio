@@ -1,234 +1,116 @@
-* {
-	box-sizing: border-box;
+/* CORE FRAMEWORKS */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-    margin:0;
-    background-color: #87ceeb;
+header,section,nav,footer,div {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 1400px;
+    text-align: center;
 }
 
 .row {
-  max-width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
-}
-
-.row::before, .row::after {
-  display: table;
-  content: '';
-}
-
-.row::after {
-  clear: both;
-}
-
-.col-4,.col-6, .col-5, .col-8,.col-12 {
-  float: left;
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
-}
-
-.fifty {
-  float: left;
-  padding-left: 1.04166666%;
-  padding-right: 1.04166666%;
-}
-.fifty {
-    width: 50%;
-}
-
-.col-4, .col-6, .col-5, .col-8, .col-12 {
-  width: 100%;
-}
-
-@media only screen and (min-width: 650px) {
-
-  .col-4 {
-    width: 33.33333%;
-  }
-
-  .col-5 {
-    width: 20%;
-  }
-
-  .col-6 {
-    width: 50%;
-  }
-
-  .col-8 {
-    width: 66.666666%;
-  }
-
-  .col-12 {
     width: 100%;
-  }
-  .name {
-      text-align: center;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
 }
 
-@media only screen and (max-width: 600px){
-    .nav-bar.responsive {
-        position: relative;
-    }
-
-    .nav-bar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 50px;
-    width: 50px;
-    }
-
-    .nav-bar.responsive div a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-
-    .nav-bar a {
-        display: none;
-    }
-    .name a {
-        display: block;
-    }
-
-    .nav-bar a.icon {
-    float: right;
-    display: block;
-    height: 50px;
-    width: 50px;
-    padding: 8px 0 0 0;
-    }
+.flex-left {
+    display: flex;
+    justify-content: flex-start ;
+}
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
+.item {
+
+}
+
+/*TYPOGRAPHY*/
+h1 {
+    font-size: 3em;
+}
+
+/*NAVIGATION CSS*/
 header {
-	position: fixed;
-    background-color: #333;
-	top: 0px;
-    color: black;
-    width: 100%;
+    background: #10d07e;
 }
 
-.image img {
-	max-width: 75%;
-	min-width: 75%;
-}
-
-a img {
-    max-width: 85%;
-    height: 85%;
-}
-
-.image, h2, .contact, .resources, .bio-photo {
-    text-align: center;
-}
-
-.contact, .resources {
-    margin-top: 25px;
-}
-
-#project-1,#project-2,#project-3{
-	margin-top: 45px;
-}
-
-#bio {
-    margin-top: 70px;
-}
-
-nav a {
-    display: block;
-    float: left;
-    font-family: sans-serif;
-    font-size: 14px;
-    color: white;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    text-decoration: none;
-}
-
-.button {
-    text-align: center;
-}
-
-.button-link {
-  margin-top: 15px ;
-  background-color: darkgray;
-  border: 1px solid black;
-  color: white;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 8px;
-}
-
-.button-link  {
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-}
-
-.button-link:hover, .button-link:target, .button-link:focus {
-    background-color: #69ff6d; /* Green */
-    color: black;
-    font-weight: bold;
-}
-
-
-.nav-bar .icon {
-  display: none;
-}
-/* Add a black background color to the top navigation */
-.nav-bar {
+nav {
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
-.nav-bar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border: none;
+ul {
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* Change the color of links on hover */
-.nav-bar a:hover,.nav-bar a:focus,.nav-bar a:target{
-    background-color: #ddd;
-    color: black;
-}
-
-.selectedNavElement {
-    background-color: #ddd;
-    color: black;
-}
-
-header {
-    margin-left: 0;
-}
-
-.contact a, .resources a {
+li {
     display: inline-block;
+    margin: 0 -4px;
+    padding: 5px 0;
+}
+
+ul > li > a {
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+ul > li > a:hover, ul > li > a:active {
+  background: white;
+  color: black
+}
+
+a > img {
     height: 60px;
     width: 60px;
 }
 
-.portrait {
-    width: 50%;
-    height: 50%;
+/*BUTTON CSS*/
+.button-link {
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
-.fifty {
-    width: 50%;
+.button-link:hover {
+  background-color: #ff5722;
+      box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+  color: #fff;
+  transform: translateY(-7px);
 }
-p {
-    text-align: center;
-}
+
+
+
 
