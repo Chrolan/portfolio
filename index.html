@@ -4,34 +4,22 @@
 <head>
 	<title>Jordi Kleriga | Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Source+Sans+Pro" rel="stylesheet">
 	<link href="index.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
 	<header class="header" role="banner">
-		<nav role="navigation" id="nav-bar" class="container">
-			<div class="row">
-				<ul class="">
-					<li><a href="https://github.com/Chrolan/" >Jordi Kleriga</a></li>
-				</ul>
-				<ul class="nav-items">
-					<li><a href="#" id="bio-button" class="nav-button">Bio</a></li>
-					<li><a href="#" id="project-1-button" class="nav-button">Work Out App</a></li>
-					<li><a href="#" id="project-2-button" class="nav-button">Service Request</a></li>
-					<li><a href="#" id="project-3-button" class="nav-button">Food Locator</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
-
-	<section id="one">
-			<div class="container">
+		<div class="container">
+					<h1 class="name">
+						Jordi Kleriga
+					</h1>
 					<p>
-					Hello there! My name is Jordi Kleriga and I'm an aspiring full stack developer. I love building new and interesting items. My focus is to bring easy to use
+					A little background about me. I'm an aspiring full stack developer. I love building new and interesting items. My focus is to bring easy to use
 					form focused programs to automate simple tasks.
 					My background in Network Engineering has taught me to focus on Data and the ability to transport that to the user.
 					Data runs the world!
-					If you'd like to contact me, you can do so below
+					If you'd like to contact me, you can find links below to various media or check out my projects below
 					<ul class="">
 					<li><a href="mailto:jordikleriga@gmail.com"><img src="assets/email.png"/></a></li>
 					<li><a href="https://www.linkedin.com/in/jordi-kleriga-9734679b/"><img src="assets/linkedin.png"/></a></li>
@@ -39,90 +27,106 @@
 					</ul>
 				</p>
 			</div>
-	</section>
+	</header>
 
-	<section class="container" id="two">
+	<div class="divider div-transparent div-dot"></div>
+
+	<section class="segment" id="one">
+		<div class="container">
 		<h1 class="project-name">
 				Workout App
 		</h1>
-		<div class="row" id="project-1">
-			<div class="sub-container">
-				<span class="project-description">
-					Lightweight workout tracker that allows the creation of work outs and the ability to add exercises.
-					Editing of workouts is available, along with deleting work outs the user no longer needs.
-				</span>
-				<div class="row">
-					<div class="flex-right"><button class="button-link" onclick="location.href='https://github.com/Chrolan/react-capstone-workout'" type="button">Github</button></div>
-					<div class="flex-left"><button class="button-link" onclick="location.href='https://enigmatic-anchorage-97005.herokuapp.com/'">Live Project</button></div>
+			<div class="row" id="project-1">
+				<div class="sub-container">
+					<span class="project-description">
+						Lightweight workout tracker that allows the creation of work outs and the ability to add exercises.
+						Editing of workouts is available, along with deleting work outs the user no longer needs. This should allow users
+						to keep record of progress and help their overall health.
+					</span>
+					<ul class="resource-list">
+						<li><a href="https://reactjs.org/"><img src="assets/react.png" alt="react js"></a></li>
+						<li><a href="https://react-redux.js.org/"><img src="assets/redux.png" alt="redux js"></a></li>
+						<li><a href="https://nodejs.org/en/about/"><img src="assets/node.png" alt="node javascript"></a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a></li>
+						<li><a href="https://www.mongodb.com/"><img src="assets/mongodb.png" alt="mongo database"></a></li>
+					</ul>
+					<div class="row">
+						<div class="flex-right"><button class="button-link" onclick="location.href='https://github.com/Chrolan/react-capstone-workout'" type="button">Github</button></div>
+						<div class="flex-left"><button class="button-link" onclick="location.href='https://enigmatic-anchorage-97005.herokuapp.com/'">Live Project</button></div>
+					</div>
 				</div>
-				<ul class="resource-list">
-					<li><a href="https://reactjs.org/"><img src="assets/react.png" alt="react js"></a></li>
-					<li><a href="https://react-redux.js.org/"><img src="assets/redux.png" alt="redux js"></a></li>
-					<li><a href="https://nodejs.org/en/about/"><img src="assets/node.png" alt="node javascript"></a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a></li>
-					<li><a href="https://www.mongodb.com/"><img src="assets/mongodb.png" alt="mongo database"></a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="assets/Create-Workout-Main%20Page.png" alt="workout app "/>
-			</div>
-		</div>
-	</section>
-
-	<section class="container" id="three">
-		<h1 class="project-name">
-			Service Request System
-		</h1>
-		<div class="row" id="project-2">
-			<div class="image">
-				<img src="assets/CSR-Main%20Page.png" alt=""/>
-			</div>
-			<div class="sub-container">
-				<span class="project-description">
-					Service request system is a CRM of sorts. It allows users to submit telecommunications requests for
-					service activation. This project was very specific to my current employment as this is an immediate
-					need for a way our customers could submit record add / changes for their customers
-				</span>
-				<ul class="resource-list">
-					<li><a href="https://nodejs.org/en/about/"><img src="assets/node.png" alt="node javascript"></a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a></li>
-					<li><a href="https://www.mongodb.com/"><img src="assets/mongodb.png" alt="mongo database"></a></li>
-				</ul>
-				<div class="row">
-					<div class="flex-right"><button class="button-link" onclick="location.href='https://github.com/Chrolan/node-capstone-csr'">Github</button></div>
-					<div class="flex-left"><button class="button-link" onclick="location.href='https://pure-oasis-55665.herokuapp.com/'">Live Project</button></div>
+				<div class="image">
+					<img src="assets/Create-Workout-Main%20Page.png" alt="workout app "/>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="container" id="four">
+	<div class="divider div-transparent div-dot"></div>
+
+	<section class="segment" id="two">
+		<div class="container">
+			<h1 class="project-name">
+				Service Request System
+			</h1>
+			<div class="row" id="project-2">
+				<div class="image">
+					<img src="assets/CSR-Main%20Page.png" alt=""/>
+				</div>
+				<div class="sub-container">
+					<span class="project-description">
+						Service request system is a CRM of sorts. It allows users to submit telecommunications requests for
+						service activation. This project was very specific to my current employment as this is an immediate
+						need for a way our customers could submit record add / changes for their customers
+					</span>
+					<ul class="resource-list">
+						<li><a href="https://nodejs.org/en/about/"><img src="assets/node.png" alt="node javascript"></a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a></li>
+						<li><a href="https://www.mongodb.com/"><img src="assets/mongodb.png" alt="mongo database"></a></li>
+					</ul>
+					<div class="row">
+						<div class="flex-right"><button class="button-link" onclick="location.href='https://github.com/Chrolan/node-capstone-csr'">Github</button></div>
+						<div class="flex-left"><button class="button-link" onclick="location.href='https://pure-oasis-55665.herokuapp.com/'">Live Project</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="divider div-transparent div-dot"></div>
+
+	<section class="segment" id="three">
+		<div class="container">
 		<h1 class="project-name">
 			Food Locator!
 		</h1>
-		<div class="row" id="project-3">
-			<div class="sub-container">
-				<span class="project-description">
-					This project encompasses the usage of a Restaurant API to search and display restaurants near you. This project then
-					displays the result over a google maps overlay.
-				</span>
-				<div class="row">
-					<div class="flex-right"><button class="button-link" onclick="location.href='https://github.com/Chrolan/api-hack'">Github</button></div>
-					<div class="flex-left"><button class="button-link" onclick="location.href='https://chrolan.github.io/api-hack/'">Live Project</button></div>
+			<div class="row" id="project-3">
+				<div class="sub-container">
+					<span class="project-description">
+						This project encompasses the usage of a Restaurant API to search and display restaurants near you. This project then
+						displays the result over a google maps overlay.
+					</span>
+					<ul class="resource-list">
+						<li><a href="https://jquery.com/"><img src="assets/jquery.png" alt="jquery"></a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a></li>
+					</ul>
+					<div class="row">
+						<div class="flex-right"><button class="button-link" onclick="location.href='https://github.com/Chrolan/api-hack'">Github</button></div>
+						<div class="flex-left"><button class="button-link" onclick="location.href='https://chrolan.github.io/api-hack/'">Live Project</button></div>
+					</div>
 				</div>
-				<ul class="resource-list">
-					<li><a href="https://jquery.com/"><img src="assets/jquery.png" alt="jquery"></a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML"><img src="assets/html.png" alt="html"></a></li>
-					<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="assets/css.png" alt="css"></a></li>
-				</ul>
-			</div>
-			<div class="image">
-				<img src="assets/Food%20Locator%20Main%20Page.png" alt=""/>
+				<div class="image">
+					<img src="assets/Food%20Locator%20Main%20Page.png" alt=""/>
+				</div>
 			</div>
 		</div>
 	</section>
+
+	<div class="bg"></div>
+	<div class="bg2"></div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 	<script src="index.js" type="application/javascript" rel="script"></script>
