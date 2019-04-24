@@ -255,6 +255,9 @@ header {
         flex-direction: row;
         margin-bottom: 10px;
     }
+    header .container {
+        height: 80%;
+    }
 }
 
 
